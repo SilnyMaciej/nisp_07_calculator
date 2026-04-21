@@ -58,13 +58,13 @@ function calculateResult() {
     // Pełna obsługa działań zgodnie z wytycznymi
     switch (currentOperation) {
         case 'add':
-            
+            result = prev + current;
             break;
         case 'subtract':
             result = prev - current;
             break;
         case 'multiply':
-           
+           result = prev * current;
             break;
         case 'divide':
             if (current === 0) {
@@ -72,7 +72,7 @@ function calculateResult() {
                 clearCalculator();
                 return;
             }
-            
+            result = prev / current;
             break;
         default:
             return;
