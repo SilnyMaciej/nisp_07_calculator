@@ -58,7 +58,7 @@ function calculateResult() {
     // Pełna obsługa działań zgodnie z wytycznymi
     switch (currentOperation) {
         case 'add':
-            result = prev + current;
+            
             break;
         case 'subtract':
             result = prev - current;
